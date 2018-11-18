@@ -11,7 +11,9 @@ package com.example.macbookpro.hcic;
         import android.graphics.Paint;
         import android.net.Uri;
         import android.os.Bundle;
+        import android.os.RemoteException;
         import android.provider.MediaStore;
+        import android.util.Log;
         import android.view.MotionEvent;
         import android.view.View;
         import android.widget.Button;
@@ -49,7 +51,7 @@ public class draw extends MainActivity{
         });
         //initalize a paint and the width of paint is 5, red color
         paint = new Paint();
-        paint.setStrokeWidth(5);
+        paint.setStrokeWidth(10);
         paint.setColor(Color.RED);
 
         iv_canvas = (ImageView) findViewById(R.id.imageView);
@@ -132,6 +134,7 @@ public class draw extends MainActivity{
             imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
         }
     }
+
 
 
 }
