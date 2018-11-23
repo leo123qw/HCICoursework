@@ -2,17 +2,15 @@ package com.example.macbookpro.hcic;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.*;
-
-import java.text.SimpleDateFormat;
-
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -49,9 +47,19 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("opening times: "+shPreferences.getInt("bootcountnum", 0) );
         /******************************       button         ************************/
         Button draw =(Button)findViewById(R.id.button2);
-        draw.setOnClickListener(listener);
+        draw.setOnClickListener(listener_draw);
+        Button click =findViewById(R.id.button);
+        click.setOnClickListener(listener_click);
     }
-     private View.OnClickListener listener =new View.OnClickListener() {
+    private View.OnClickListener listener_click =new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent =new Intent();
+            intent.setClass(MainActivity.this,click.class);
+            startActivity(intent);
+        }
+    };
+     private View.OnClickListener listener_draw =new View.OnClickListener() {
          @Override
          public void onClick(View v) {
              Intent intent =new Intent();
@@ -59,6 +67,6 @@ public class MainActivity extends AppCompatActivity {
              startActivity(intent);
          }
      };
-
+/***********************button click ***********************/
 
 }
