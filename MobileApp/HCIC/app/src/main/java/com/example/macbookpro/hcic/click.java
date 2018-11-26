@@ -1,5 +1,6 @@
 package com.example.macbookpro.hcic;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -48,6 +49,8 @@ public class click extends MainActivity {
             public void onClick(View v) {
                 click++;
                 clicks.setText("Clicks: "+ click);
+                MediaPlayer mp = MediaPlayer.create(click.this,R.raw.effect);
+                mp.start();
             }
         });
 
