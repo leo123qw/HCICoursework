@@ -23,6 +23,10 @@
         <activity
             android:name=".click"
             android:label="@string/title_activity_click"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".calender"
+            android:label="@string/title_activity_calender"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

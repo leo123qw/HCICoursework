@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         draw.setOnClickListener(listener_draw);
         Button click =findViewById(R.id.button);
         click.setOnClickListener(listener_click);
+        Button calender =findViewById(R.id.calender);
+        calender.setOnClickListener(listener_calender);
     }
     private View.OnClickListener listener_click =new View.OnClickListener() {
         @Override
@@ -67,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
              startActivity(intent);
          }
      };
+    private View.OnClickListener listener_calender =new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent =new Intent();
+            intent.setClass(MainActivity.this,calender.class);
+            startActivity(intent);
+        }
+    };
 /***********************button click ***********************/
 
 }
