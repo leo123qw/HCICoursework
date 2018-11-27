@@ -24,6 +24,10 @@
             android:name=".click"
             android:label="@string/title_activity_click"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".stroke"
+            android:label="stroke"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
