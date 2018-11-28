@@ -80,7 +80,6 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="5" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -93,9 +92,9 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../../Screenshot 2018-11-28 at 12.19.12.png" />
-                                      <entry key="outputName" value="resume_icon" />
+                                      <entry key="iconShape" value="VRECT" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../../Screenshot 2018-11-28 at 13.33.59.png" />
+                                      <entry key="outputName" value="graph" />
                                     </map>
                                   </option>
                                 </PersistentState>
