@@ -84,7 +84,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
-        android:text="Click games: 6 mins in total"
+        android:text="Click games: 2 mins in total"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
