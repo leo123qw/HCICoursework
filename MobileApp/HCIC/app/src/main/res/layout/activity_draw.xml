@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context=".draw"
+    android:background="#D7F9FF"
     >
 
     <ImageView
@@ -13,6 +14,7 @@
         android:layout_width="397dp"
         android:layout_height="524dp"
         android:layout_marginStart="4dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -27,6 +29,7 @@
         android:layout_marginBottom="1dp"
         android:src="@drawable/resume_icon"
         android:scaleType="centerInside"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
@@ -43,6 +46,7 @@
         android:layout_marginBottom="1dp"
         android:scaleType="centerInside"
         android:src ="@drawable/uploadimage"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/resume_icon"
         app:layout_constraintHorizontal_bias="0.135"
