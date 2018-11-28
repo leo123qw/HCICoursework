@@ -13,7 +13,7 @@ import android.os.Bundle;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.FileNotFoundException;
@@ -25,8 +25,8 @@ public class draw extends MainActivity {
     private Canvas canvas;
     private Bitmap baseBitmap;
     private Bitmap alterBitmap;
-    private Button buttonLoadImage;
-    private Button btn_resume;
+    private ImageButton buttonLoadImage;
+    private ImageButton btn_resume;
     private static int RESULT_LOAD_IMAGE = 1;
 
     @Override
@@ -38,10 +38,10 @@ public class draw extends MainActivity {
         paint.setColor(Color.RED);
 
         iv_canvas =  findViewById(R.id.imageView);
-        btn_resume =  findViewById(R.id.resume);
+        btn_resume =  findViewById(R.id.resume_icon);
         btn_resume.setOnClickListener(click);
         iv_canvas.setOnTouchListener(new MyTouchListener());
-        buttonLoadImage = (Button) findViewById(R.id.uploadimage);
+        buttonLoadImage = (ImageButton) findViewById(R.id.uploadimage);
         buttonLoadImage.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -99,7 +99,7 @@ public class draw extends MainActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.resume:
+                case R.id.resume_icon:
                     resumeCanvas();
                     break;
                 default:

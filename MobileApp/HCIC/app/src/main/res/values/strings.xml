@@ -3,4 +3,5 @@
     <string name="title_activity_draw">draw</string>
     <string name="title_activity_click">click</string>
     <string name="title_activity_calender">calender</string>
+    <string name="title_activity_graph">graph</string>
 </resources>

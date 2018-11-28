@@ -19,7 +19,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../../Screenshot 2018-11-27 at 15.50.39.png" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/app/src/main/res/drawable/resume_icon.png" />
                                       <entry key="outputName" value="nov2018" />
                                       <entry key="theme" value="CUSTOM" />
                                     </map>
@@ -91,9 +91,22 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="iconShape" value="HRECT" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../../Screenshot 2018-11-28 at 11.01.31.png" />
-                                      <entry key="outputName" value="nov" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="iconShape" value="VRECT" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../../Screenshot 2018-11-28 at 13.33.59.png" />
+                                      <entry key="outputName" value="graph" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="notification">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../../Screenshot 2018-11-28 at 12.19.12.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

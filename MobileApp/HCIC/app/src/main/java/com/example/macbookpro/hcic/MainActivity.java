@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         stroke.setOnClickListener(listener_stroke);
         ImageButton calender =findViewById(R.id.calender);
         calender.setOnClickListener(listener_calender);
+        ImageButton graph = findViewById(R.id.graph);
+        graph.setOnClickListener(listener_graph);
     }
     private View.OnClickListener listener_click =new View.OnClickListener() {
         @Override
@@ -89,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent intent =new Intent();
             intent.setClass(MainActivity.this,calender.class);
+            startActivity(intent);
+        }
+    };
+    private View.OnClickListener listener_graph =new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent =new Intent();
+            intent.setClass(MainActivity.this,graph.class);
             startActivity(intent);
         }
     };
