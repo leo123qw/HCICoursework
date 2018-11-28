@@ -7,7 +7,8 @@ import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Editor editor;
     private long bootStartTime;
     private boolean flag =false;
+    private ImageView logo = null;
 
 
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        logo = findViewById(R.id.mainlogo);
         bootStartTime = System.currentTimeMillis();
         TextView tv=(TextView) findViewById(R.id.text);
         shPreferences = getApplicationContext().getSharedPreferences("boocount", Context.MODE_PRIVATE);
@@ -46,13 +49,13 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
         tv.setText("opening times: "+shPreferences.getInt("bootcountnum", 0) );
         /******************************       button         ************************/
-        Button draw =(Button)findViewById(R.id.button2);
+        ImageButton draw =findViewById(R.id.button2);
         draw.setOnClickListener(listener_draw);
-        Button click =findViewById(R.id.button);
+        ImageButton click =findViewById(R.id.button);
         click.setOnClickListener(listener_click);
-        Button stroke = findViewById(R.id.button3);
+        ImageButton stroke = findViewById(R.id.button3);
         stroke.setOnClickListener(listener_stroke);
-        Button calender =findViewById(R.id.calender);
+        ImageButton calender =findViewById(R.id.calender);
         calender.setOnClickListener(listener_calender);
     }
     private View.OnClickListener listener_click =new View.OnClickListener() {
