@@ -5,46 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:context=".draw">
-
-    <Button
-        android:id="@+id/uploadimage"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="3dp"
-        android:text="uploadImage"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/resume"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+    tools:context=".draw"
+    >
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="397dp"
-        android:layout_height="522dp"
+        android:layout_height="524dp"
         android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/resume"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="3dp"
-        android:text="resume"
+    <ImageButton
+        android:id="@+id/resume_icon"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/resume_icon"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/uploadimage"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/uploadimage"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="1dp"
+        android:scaleType="centerInside"
+        android:src ="@drawable/uploadimage"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/resume_icon"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/uploadimage" />
+
 </android.support.constraint.ConstraintLayout>
 
